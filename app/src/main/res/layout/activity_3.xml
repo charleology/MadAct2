@@ -7,22 +7,43 @@
     tools:context=".Activity3">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="132dp"
-        android:layout_height="50dp"
+        android:id="@+id/tv1"
+        android:layout_width="164dp"
+        android:layout_height="64dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginEnd="147dp"
-        android:layout_marginBottom="605dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="580dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Currency"
-        android:textSize="35dp"
+        android:textSize="45dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="80dp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="527dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Converter"
+        android:textSize="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="80dp" />
+
 </RelativeLayout>
