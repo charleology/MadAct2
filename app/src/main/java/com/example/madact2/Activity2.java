@@ -39,20 +39,18 @@ public class Activity2 extends AppCompatActivity {
 
                   double value = Double.parseDouble(val.getText().toString());
 
-                  if(spinner.getSelectedItem().toString().equals("Celsius to Fahrenheit"){
+                  if(spinner.getSelectedItem().toString().equals("Celsius to Fahrenheit")){
                       value = value * 1.8 + 32;
                     result1.setText(String.format("%.2f °C", value));
 
                   }
                   else{
-                      value = (value - 32) * 5 / 9;
-                      result1.setText(String.format("%.2f °F", value));
+                  value = (value - 32) * 5 / 9;
+                  result1.setText(String.format("%.2f °F", value));
 
-
-                  }
 
               }
-          });
+          }});
 
 
     }
