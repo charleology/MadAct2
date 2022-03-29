@@ -6,4 +6,11 @@
         <item>Celsius to Fahrenheit </item>
         <item>Fahrenheit to Celsius </item>
     </string-array>
+
+    <string-array name="units">
+        <item>Meter to Inches</item>
+        <item>Inches to Meter</item>
+        <item>Meter to Centimeter</item>
+        <item>Centimeter to Meter</item>
+    </string-array>
 </resources>

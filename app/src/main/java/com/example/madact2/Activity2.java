@@ -25,12 +25,11 @@ public class Activity2 extends AppCompatActivity {
         val = (EditText) findViewById(R.id.value);
         result1 = (TextView)findViewById(R.id.result);
 
-
+        String[] choices = {"Celsius to Fahrenheit", "Fahrenheit to Celsius"};
 
         spinner = findViewById(R.id.tempSpinner);
-        ArrayAdapter<CharSequence>temperatureAdapter= ArrayAdapter.createFromResource(this, R.array.temperature, android.R.layout.simple_spinner_item);
-        temperatureAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(temperatureAdapter);
+        ArrayAdapter <String> arrayAdapter = new ArrayAdapter<String>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, choices);
+        spinner.setAdapter(arrayAdapter);
 
           btnConvert.setOnClickListener(new View.OnClickListener() {
               @Override
@@ -39,7 +38,7 @@ public class Activity2 extends AppCompatActivity {
 
                   double value = Double.parseDouble(val.getText().toString());
 
-                  if(spinner.getSelectedItem().toString().equals("Celsius to Fahrenheit"){
+                  if(spinner.getSelectedItem().toString().equals ("Celsius to Fahrenheit")){
                       value = value * 1.8 + 32;
                     result1.setText(String.format("%.2f °C", value));
 
@@ -55,7 +54,6 @@ public class Activity2 extends AppCompatActivity {
           });
 
 
-    }
+    }}
 
 
-}
