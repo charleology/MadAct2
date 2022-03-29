@@ -11,19 +11,19 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class Activity2 extends AppCompatActivity {
     Spinner spinner;
     Button  btnConvert;
-    EditText    text;
-    TextView    result;
+    EditText val;
+    TextView    result1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
         btnConvert = (Button)findViewById(R.id.convertButton);
-        text = (EditText) findViewById(R.id.value);
-        result = (TextView)findViewById(R.id.result);
+        val = (EditText) findViewById(R.id.value);
+        result1 = (TextView)findViewById(R.id.result);
 
 
 
@@ -31,18 +31,31 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
         ArrayAdapter<CharSequence>temperatureAdapter= ArrayAdapter.createFromResource(this, R.array.temperature, android.R.layout.simple_spinner_item);
         temperatureAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(temperatureAdapter);
-        spinner.setOnItemSelectedListener(this);
+
+          btnConvert.setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View view) {
+
+
+                  double value = Double.parseDouble(val.getText().toString());
+
+                  if(spinner.getSelectedItem().toString() == "Celsius to Fahrenheit"){
+                      value = value * 1.8 + 32;
+                    result1.setText(String.format("%.2f °C", value));
+
+                  }
+                  else{
+                      value = (value - 32) * 5 / 9;
+                      result1.setText(String.format("%.2f °F", value));
+
+
+                  }
+
+              }
+          });
 
 
     }
 
-    @Override
-    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> adapterView) {
-
-    }
 }

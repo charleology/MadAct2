@@ -19,7 +19,7 @@
     <Button
         android:id="@+id/convertButton"
         android:layout_width="117dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:text="@string/convert"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +43,7 @@
     <EditText
         android:id="@+id/value"
         android:layout_width="154dp"
-        android:layout_height="47dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
@@ -52,6 +52,7 @@
         app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.358" />
+        app:layout_constraintVertical_bias="0.358"
+        android:autofillHints="" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

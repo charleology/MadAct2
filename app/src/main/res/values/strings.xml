@@ -3,7 +3,7 @@
     <string name="convert">Convert</string>
 
     <string-array name="temperature">
-        <item>Celsius </item>
-        <item>fahrenheit</item>
+        <item>Celsius to Fahrenheit </item>
+        <item>Fahrenheit to Celsius </item>
     </string-array>
 </resources>
