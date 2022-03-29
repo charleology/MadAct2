@@ -33,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
                     //Act2
                     startActivity(new Intent(MainActivity.this, Activity2.class));
                 }
+                else if (i==1){
+                    startActivity(new Intent(MainActivity.this, Activity3.class));
+                }
+                else{
+                    startActivity(new Intent(MainActivity.this, Activity4.class));
+                }
+
             }
         });
 
