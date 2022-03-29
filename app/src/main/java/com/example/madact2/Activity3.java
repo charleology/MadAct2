@@ -24,12 +24,12 @@ public class Activity3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        currencyAuto = (AutoCompleteTextView) findViewById(R.id.autoTv);
-        resultView = (TextView) findViewById(R.id.resultView);
-        inputView = (EditText) findViewById(R.id.inputView);
-        convertBtn = (Button) findViewById(R.id.convertBtn);
+        currencyAuto = findViewById(R.id.autoTv);
+        resultView = findViewById(R.id.resultView);
+        inputView = findViewById(R.id.inputView);
+        convertBtn = findViewById(R.id.convertBtn);
 
-        ArrayAdapter<String> adapt = new ArrayAdapter<String>(Activity3.this, android.R.layout.select_dialog_item, curr);
+        ArrayAdapter<String> adapt = new ArrayAdapter<>(Activity3.this, android.R.layout.select_dialog_item, curr);
         currencyAuto.setAdapter(adapt);
         currencyAuto.setThreshold(2);
 
