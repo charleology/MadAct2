@@ -23,7 +23,7 @@ public class Activity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_3);
         currencyAuto = findViewById(R.id.autoTv);
         resultView = findViewById(R.id.resultView);
         inputView = findViewById(R.id.inputView);

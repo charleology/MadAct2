@@ -13,7 +13,7 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
-    String names [] = {"Temperature Conversion","Currency Consversion", "Length Conversion"};
+    String names [] = {"Temperature Conversion","Currency Conversion", "Length Conversion"};
     ListView lv1;
 
     @Override
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 else if (i==1){
                     startActivity(new Intent(MainActivity.this, Activity3.class));
                 }
-                else{
+                else if (i==2) {
                     startActivity(new Intent(MainActivity.this, Activity4.class));
                 }
 
