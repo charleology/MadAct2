@@ -57,12 +57,15 @@ public class MainActivity extends AppCompatActivity {
                 switch (goTo) {
                     case 0:
                         startActivity(new Intent(MainActivity.this, Activity2.class));
+                        finish();
                         break;
                     case 1:
                         startActivity(new Intent(MainActivity.this, Activity3.class));
+                        finish();
                         break;
                     case 2:
                         startActivity(new Intent(MainActivity.this, Activity4.class));
+                        finish();
                         break;
                 }
             }
